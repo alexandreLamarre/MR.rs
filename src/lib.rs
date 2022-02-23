@@ -1,5 +1,6 @@
+mod combiner;
 mod mapper;
-
+mod reducer;
 /// Client Side control of distributed Map Reduce
 struct Client {
     nodes: Vec<Node>,

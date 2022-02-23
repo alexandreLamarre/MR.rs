@@ -1,3 +1,5 @@
+use crate::reducer;
+
 /// Mapper processes all input and yields the output of processed data
 /// to the Reducer
 pub struct Mapper {
@@ -8,6 +10,11 @@ impl Mapper {
     pub fn new() -> Mapper {
         Mapper { state: 0 }
     }
+}
+
+enum Endpoint {
+    Mapper,
+    Reducer,
 }
 
 #[cfg(test)]
